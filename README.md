@@ -33,20 +33,20 @@
     <table>
         <tr>
             <th>First Name</th>
-            <th><input size="70"></th>
+            <th><input size="40"></th>
         </tr>
         <tr>
             <td>Last Name</td>
-            <th><input size="70"></th>
+            <th><input size="40"></th>
         </tr>
         <tr>
             <td>Email</td>
-            <th><input size="70"></th>
+            <th><input size="50"></th>
         </tr>
         <tr>
             <td>Gender</td>
             <td>
-                <select style="width:100%" name="gender">
+                <select style="width:50%" name="gender">
                     <option value="Male">Male</option>
                     <option value="Female">Female</option>
                 </select>
@@ -54,19 +54,19 @@
         </tr>
         <tr>
             <td>Date of Birth</td>
-            <th><input size="100"></th>
+            <th><input size="40"></th>
         </tr>
         <tr>
             <td>Address</td>
-            <th><input size="100"></th>
+            <th><input size="40"></th>
         </tr>
         <tr>
             <td>City</td>
-            <th><input size="100"></th>
+            <th><input size="40"></th>
         </tr>
         <tr>
             <td>Zip Code</td>
-            <th><input size="100"></th>
+            <th><input size="40"></th>
         </tr>
         <tr>
             <td></td>
