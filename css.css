@@ -1,0 +1,79 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('https://w.wallhaven.cc/full/we/wallhaven-weo857.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.login-form {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+.textbox {
+    margin: 10px 0;
+}
+.textbox input {
+    padding: 10px;
+    width: 200px;
+    border-radius: 4px;
+    border: 1px solid #cccccc;
+}
+.textbox i {
+    margin-right: 10px;
+}
+input[type='submit'] {
+    background-color: #cb57ee;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type='submit']:hover {
+    background-color: #cb57ee;
+}
+
+body#body-html {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('https://w.wallhaven.cc/full/72/wallhaven-72x1pe.png');
+    background-size: cover;
+    background-position: center;
+}
+.sidebar {
+    background-color: #E7C2FF;
+    color: rgb(0, 0, 0);
+    width: 200px;
+    padding: 20px;
+    height: 100vh;
+}
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.sidebar a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+footer {
+    background-color: #E7C2FF;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
