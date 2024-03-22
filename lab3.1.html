@@ -1,30 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebCore</title>
+    <title>Tailwind Dashboard</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
-
-<body class="flex items-center justify-center min-h-screen bg-gray-100">
-    <form class="w-2/5 bg-white shadow-md rounded-lg text-center p-8">
-        <h2 class="text-2xl mb-8 font-extrabold">Login</h2>
-        <div class="flex items-center justify-center mb-4">
-            <input type="text" id="user" placeholder="username" class="pl-6 border rounded px-4 py-2 w-full" style="margin-bottom: 10px;">
-            <i class="absolute fas fa-user mr-80 mb-2"></i>
+<body class="bg-gray-100 font-sans">
+    <div class="flex h-screen">
+        <div class="w-64 bg-gray-900 text-white">
+            <div class="p-6">
+                <h1 class="text-2xl font-semibold text-center mb-6">Dashboard</h1>
+                <nav class="space-y-1">
+                    <a href="#" class="block py-2 px-4 bg-gray-700 hover:bg-green-400 rounded-lg text-white">Home</a>
+                    <a href="#" class="block py-2 px-4 bg-gray-700 hover:bg-green-400 rounded-lg text-white">Analytics</a>
+                    <a href="#" class="block py-2 px-4 bg-gray-700 hover:bg-green-400 rounded-lg text-white">Reports</a>
+                    <a href="#" class="block py-2 px-4 bg-gray-700 hover:bg-green-400 rounded-lg text-white">Settings</a>
+                </nav>
+            </div>
         </div>
-        <div class="flex items-center justify-center mb-4">
-            <i class="absolute fas fa-lock mr-80 mb-2"></i>
-            <input type="password" id="pass" placeholder="password" class="pl-6 border rounded px-4 py-2 w-full" style="margin-bottom: 10px;">
-        </div>
-        <a href="study_tilwin2.html" class="bg-green-300 text-white rounded-lg px-4 py-2 hover:bg-red-400">
-            Login
-            <i class="fas fa-sign-in-alt ml-2"></i>
-        </button>
-    </form>
+        <main class="flex-1 flex flex-col">
+            <header class="bg-blue-500 text-white py-6">
+                <div class="container mx-auto text-center">
+                    <h1 class="text-2xl font-semibold">Dashboard</h1>
+                </div>
+            </header>
+            <div class="bg-white border-b border-gray-200 py-4">
+                <div class="container mx-auto flex justify-between items-center px-4">
+                    <div class="text-lg font-semibold">Welcome, Mikednyl!!</div>
+                    <button onclick="window.location.href='study_tilwin.html'" class="bg-red-500 hover:bg-red-600 text-white py-2 px-4 rounded">Logout</button>
+                </div>
+            </div>
+            <div class="container mx-auto py-8 px-4">
+                <h2 class="text-2xl font-semibold mb-4 text-center">WELCOME, Ganinay!!</h2>
+                <p>Welcome to the dashboard! This is the main content area where you can display various information and charts.</p>
+            </div>
+            <footer class="bg-gray-800 text-white py-4 mt-72">
+                <div class="container mx-auto text-center">
+                    © 2024 Dashboard. All rights reserved.
+                </div>
+            </footer>
+        </main>
+    </div>
 </body>
-
 </html>
