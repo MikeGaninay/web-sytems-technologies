@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>WebCore</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
-<body class="flex items-center justify-center h-screen bg-gray-200">
 
-<div class="p-10 bg-white bg-opacity-80 rounded shadow-md text-center">
-    <h2 class="text-2xl">Login</h2>
-
-    <form action="file:///C:/Users/asus/OneDrive/Documents/GitHub/web-sytems-technologies/lab3.1.html" method="post">
-        <div class="flex items-center border-b border-b-2 border-teal-500 py-2 my-4">
-            <i class="fas fa-user mr-2"></i> 
-            <input class="appearance-none bg-transparent border-none w-full text-grey-darker mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Username" name="username" required>
+<body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <form class="w-2/5 bg-white shadow-md rounded-lg text-center p-8">
+        <h2 class="text-2xl mb-8 font-extrabold">Login</h2>
+        <div class="flex items-center justify-center mb-4">
+            <input type="text" id="user" placeholder="username" class="pl-6 border rounded px-4 py-2 w-full" style="margin-bottom: 10px;">
+            <i class="absolute fas fa-user mr-80 mb-2"></i>
         </div>
-
-        <div class="flex items-center border-b border-b-2 border-teal-500 py-2 my-4">
-            <i class="fas fa-lock mr-2"></i> 
-            <input class="appearance-none bg-transparent border-none w-full text-grey-darker mr-3 py-1 px-2 leading-tight focus:outline-none" type="password" placeholder="Password" name="password" required>
+        <div class="flex items-center justify-center mb-4">
+            <i class="absolute fas fa-lock mr-80 mb-2"></i>
+            <input type="password" id="pass" placeholder="password" class="pl-6 border rounded px-4 py-2 w-full" style="margin-bottom: 10px;">
         </div>
-
-        <input class='bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded cursor-pointer' type='submit' value='Login'>
-        
-    </form> 
-</div>
-
+        <a href="study_tilwin2.html" class="bg-green-300 text-white rounded-lg px-4 py-2 hover:bg-red-400">
+            Login
+            <i class="fas fa-sign-in-alt ml-2"></i>
+        </button>
+    </form>
 </body>
+
 </html>
