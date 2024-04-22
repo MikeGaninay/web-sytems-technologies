@@ -3,45 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mike_Account_admin</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Mike_Account_admin</title>
 </head>
-<body class="bg-gray-50">
-    <div class="ml-8 border w-80 mt-6 shadow-2xl rounded-lg h-auto fixed bg-white p-6">
-        <form id="Form">
-            <h1 class="text-xl font-extrabold pb-2 text-center pt-2">Create an Account</h1>
-            <label for="name" class="mt-2">Name</label><br>
-            <input type="text" id="name" class="border-2 border-gray-400 rounded-lg mb-2 w-full px-2 py-1 focus:outline-none" required>
-            <label for="email" class="mt-2">Email</label><br>
-            <input type="email" id="email" class="border-2 border-gray-400 rounded-lg mb-2 w-full px-2 py-1 focus:outline-none" required><br>
-            <label for="role" class="mt-2">Role</label><br>
-            <select id="role" class="border-2 border-gray-400 rounded-lg mb-2 w-full px-2 py-1 focus:outline-none">
-                <option value="Admin">Admin</option>
-                <option value="User">User</option>
-                <option value="Programmer">Programmer</option>
-            </select><br>
-            <button class="bg-blue-300 mt-4 rounded-lg h-10 w-full text-white" type="submit">Create Account</button>
-        </form>
+<body>
+    <div class="ml-8 border w-80 mt-6 shadow-2xl rounded-lg h-96 fixed">
+    <form id="Form">
+        <h1 class="text-xl font-extrabold pb-2 text-center pt-2">Create an Account</h1>
+        <label for="name" class="ml-2 mt-2">Name</label><br>
+        <div class="border-2 border-gray-400 rounded-lg mb-2 w-72 h-8 pl-2 pr-2 ml-2 mt-2">
+            <input type="text" id="name" class="w-full outline-none">
+        </div>
+        <label for="email" class="ml-2 mt-2">Email</label><br>
+        <div class="border-2 border-gray-400 rounded-lg mb-2 w-72 h-8 pl-2 pr-2 ml-2 mt-2">
+        <input type="text" id="email" class="w-full outline-none"><br>
+        </div>
+        <label for="role" class="ml-2 mt-2">Role</label><br>
+        <select id="role" class="border-2 border-gray-400 rounded-lg ml-2 mt-2 w-72">
+            <option value="Admin">Admin</option>
+            <option value="User">User</option>
+            <option value="Programmer">Programmer</option>
+        </select><br>
+        <button class="bg-blue-500 mt-7 rounded-lg ml-2 h-9 w-72 text-white" type="submit">Create Account</button>
+    </form>
     </div>
     <div class="w-full md:w-2/3 overflow-auto p-6 ml-96">
-        <div class="border h-auto p-8 rounded-xl shadow-2xl bg-white">
-            <h1 class="text-xl font-extrabold text-gray-800 pb-6">User List</h1>
-            <table class="w-full table-auto border border-gray-300" id="Table_id">
-                <thead>
-                    <th class="px-4 py-2">ID</th>
-                    <th class="px-4 py-2">Name</th>
-                    <th class="px-4 py-2">Email</th>
-                    <th class="px-4 py-2">Role</th>
-                    <th class="px-4 py-2">Actions</th>
-                </thead>
-                <tbody id="user_table">
-                </tbody>
-            </table>
+        <div class="border h-96 p-8 rounded-xl shadow-2xl">
+          <h1 class="text-xl font-extrabold text-gray-800 pb-6">User List</h1>
+          <table class="w-full table-auto border border-gray-300" id="Table_id">
+            <thead>
+                <th class="px-4 py-2">ID</th>
+                <th class="px-4 py-2">Name</th>
+                <th class="px-4 py-2">Email</th>
+                <th class="px-4 py-2">Role</th>
+                <th class="px-4 py-2">Actions</th>
+            </thead>
+            <tbody id="user_table">
+
+            </tbody>
+          </table>
         </div>
-    </div>
+      </div>
 </body>
 </html>
-
 <script src="jaba.js">
-    
+
 </script>
